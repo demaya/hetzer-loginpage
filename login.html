@@ -1,0 +1,88 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Login konsoleH</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <style>
+            body {
+                background-color: #FFF;
+                font-family: Arial, Tahoma;
+                padding-top: 20px;
+            }
+            .container {
+                max-width: 450px;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .card {
+                padding: 20px;
+                background-color: #FFFFFF;
+                border: 1px solid #B6C4DB;
+            }
+            .form-group {
+                margin-bottom: 1em;
+            }
+            label {
+                display: block;
+                margin-bottom: .5em;
+            }
+            input[type=text], input[type=password] {
+                width: 100%;
+                padding: .5em;
+                border: 1px solid #ccc;
+                border-radius: .25em;
+            }
+            .btn-block {
+                display: block;
+                width: 100%;
+                padding: .5em;
+                background-color: black;
+                color: white;
+                border: none;
+                border-radius: .25em;
+                cursor: pointer;
+            }
+            .btn-block:hover {
+                background-color: #333;
+            }
+            .alert-danger {
+                color: #721c24;
+                background-color: #f8d7da;
+                border-color: #f5c6cb;
+                padding: .75em 1.25em;
+                margin-bottom: 1em;
+                border: 1px solid transparent;
+                border-radius: .25rem;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="https://y-progress.de/Y-Progress-Hetzner.png" alt="Y-Progress Logo">
+            <form action="https://konsoleh.your-server.de/login.php" method="post" enctype="application/x-www-form-urlencoded">
+                <div class="card">
+                    <msgbox/>
+                    <div class="form-group">
+                        <label for="login_user_inputbox">Login:</label>
+                        <input type="text" name="login_user_inputbox" id="login_user_inputbox">
+                    </div>
+                    <div class="form-group">
+                        <label for="login_pass_inputbox">Password:</label>
+                        <input type="password" name="login_pass_inputbox" id="login_pass_inputbox">
+                    </div>
+                    <input type="hidden" name="login_referer" value="dedi5368.your-server.de">
+                    <button type="submit" class="btn-block">Login</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
